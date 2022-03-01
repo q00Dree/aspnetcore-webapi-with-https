@@ -21,10 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DataTransfer.Http", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8117540-FD28-41A4-B9AC-2D75567CFDBC}"
 	ProjectSection(SolutionItems) = preProject
+		..\scripts\build_api.sh = ..\scripts\build_api.sh
 		..\docker-compose-long.yml = ..\docker-compose-long.yml
 		..\docker-compose-short.yml = ..\docker-compose-short.yml
 		..\proxy\nginx.conf = ..\proxy\nginx.conf
 		..\README.md = ..\README.md
+		..\start-long.sh = ..\start-long.sh
+		..\start-short.sh = ..\start-short.sh
+		..\stop-long.sh = ..\stop-long.sh
+		..\stop-short.sh = ..\stop-short.sh
 	EndProjectSection
 EndProject
 Global

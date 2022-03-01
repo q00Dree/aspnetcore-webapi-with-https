@@ -11,38 +11,37 @@ services:
     container_name: proxy
     restart: unless-stopped
     environment:
-        CERTBOT_EMAIL: "shard.f@mail.ru"
+      CERTBOT_EMAIL: "shard.f@mail.ru"
     ports:
-        - 80:80
-        - 443:443
+      - 80:80
+      - 443:443
     networks:
-        - "simple-network"
+      - "simple-network"
     volumes:
-        - ./certificates:/etc/letsencrypt
-        - ./proxy/user_conf.d:/etc/nginx/user_conf.d
+      - ./certificates:/etc/letsencrypt
+      - ./proxy/user_conf.d:/etc/nginx/user_conf.d
 
   api:
     image: api:latest
     container_name: api
     build:
-        context: ./src
-        dockerfile: ./Sample.Server/Dockerfile.Short
+      context: ./src
+      dockerfile: ./Sample.Server/Dockerfile.Short
     expose:
-        - "5000"
+      - "5000"
     depends_on:
-        - proxy
-        - database
+      - database
     networks:
-        - "simple-network"
+      - "simple-network"
     restart: always
 
   database:
     image: postgres:latest
     container_name: database
     environment:
-        POSTGRES_USER: "postgres"
-        POSTGRES_PASSWORD: "postgres"
-    ports: 
-        - "5432:5432"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
     volumes:
-        - "./simpledata:/var/lib/postgresql/data"
+      - "./simpledata:/var/lib/postgresql/data"

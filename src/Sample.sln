@@ -21,11 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DataTransfer.Http", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8117540-FD28-41A4-B9AC-2D75567CFDBC}"
 	ProjectSection(SolutionItems) = preProject
-		Sample.Server\.dockerignore = Sample.Server\.dockerignore
 		..\docker-compose-long.yml = ..\docker-compose-long.yml
 		..\docker-compose-short.yml = ..\docker-compose-short.yml
-		Sample.Server\Dockerfile.Long = Sample.Server\Dockerfile.Long
-		Sample.Server\Dockerfile.Short = Sample.Server\Dockerfile.Short
+		..\proxy\nginx.conf = ..\proxy\nginx.conf
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject

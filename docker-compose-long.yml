@@ -13,7 +13,7 @@ services:
     environment:
       CERTBOT_EMAIL: "shard.f@mail.ru"
     ports:
-      - 80:80P
+      - 80:80
       - 443:443
     networks:
       - "simple-network"

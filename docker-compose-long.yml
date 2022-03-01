@@ -6,7 +6,7 @@ networks:
 
 services:
 
-  nginx:
+  proxy:
     image: jonasal/nginx-certbot:latest
     container_name: proxy
     restart: unless-stopped

@@ -2,6 +2,7 @@ using System;
 
 namespace Sample.Server
 {
+#nullable disable
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
@@ -12,4 +13,5 @@ namespace Sample.Server
 
         public string Summary { get; set; }
     }
+#nullable restore
 }

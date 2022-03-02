@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Database.Models", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Database.Repositories", "Database\Sample.Database.Repositories\Sample.Database.Repositories.csproj", "{EEA7ADA0-5E8E-4B0E-B201-43983C76F109}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DataTransfer.Http", "Sample.DataTransfer.Http\Sample.DataTransfer.Http.csproj", "{389A00B7-102F-4645-8F51-D0EF5D09B0F0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8117540-FD28-41A4-B9AC-2D75567CFDBC}"
 	ProjectSection(SolutionItems) = preProject
 		..\docker-compose.yml = ..\docker-compose.yml
@@ -33,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user_conf.d", "user_conf.d"
 	ProjectSection(SolutionItems) = preProject
 		..\proxy\user_conf.d\nginx.conf = ..\proxy\user_conf.d\nginx.conf
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DataTransfer.Http", "DataTransfer\Sample.DataTransfer.Http\Sample.DataTransfer.Http.csproj", "{CFAB746E-DCA9-47B3-8FCC-5628B7DFB2E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,10 +60,10 @@ Global
 		{EEA7ADA0-5E8E-4B0E-B201-43983C76F109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEA7ADA0-5E8E-4B0E-B201-43983C76F109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEA7ADA0-5E8E-4B0E-B201-43983C76F109}.Release|Any CPU.Build.0 = Release|Any CPU
-		{389A00B7-102F-4645-8F51-D0EF5D09B0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{389A00B7-102F-4645-8F51-D0EF5D09B0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{389A00B7-102F-4645-8F51-D0EF5D09B0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{389A00B7-102F-4645-8F51-D0EF5D09B0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFAB746E-DCA9-47B3-8FCC-5628B7DFB2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFAB746E-DCA9-47B3-8FCC-5628B7DFB2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFAB746E-DCA9-47B3-8FCC-5628B7DFB2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFAB746E-DCA9-47B3-8FCC-5628B7DFB2E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,9 +72,9 @@ Global
 		{73A47756-364C-489C-9566-38A3092D8339} = {FCC4FC92-0874-426F-AF34-C22437D3ED01}
 		{030472C4-F93D-402B-BD1E-943F12AE5BE1} = {FCC4FC92-0874-426F-AF34-C22437D3ED01}
 		{EEA7ADA0-5E8E-4B0E-B201-43983C76F109} = {FCC4FC92-0874-426F-AF34-C22437D3ED01}
-		{389A00B7-102F-4645-8F51-D0EF5D09B0F0} = {3FB4F75F-6E8B-470A-9B92-6BF802E633DC}
 		{655F45E6-EE13-40E1-A0E4-E94A36682346} = {B8117540-FD28-41A4-B9AC-2D75567CFDBC}
 		{7E3C282B-22B3-44FB-9293-0484BA39808C} = {655F45E6-EE13-40E1-A0E4-E94A36682346}
+		{CFAB746E-DCA9-47B3-8FCC-5628B7DFB2E8} = {3FB4F75F-6E8B-470A-9B92-6BF802E633DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5C4C090-F400-4E82-B8A4-2E45E8E29947}

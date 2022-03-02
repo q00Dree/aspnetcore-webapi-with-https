@@ -9,12 +9,12 @@ services:
   proxy:
     image: jonasal/nginx-certbot:latest
     container_name: proxy
-    restart: unless-stopped
     environment:
       CERTBOT_EMAIL: "shard.f@mail.ru"
     ports:
       - "80:80"
       - "443:443"
+    restart: unless-stopped
     networks:
       - "simple-network"
     volumes:
@@ -29,11 +29,13 @@ services:
       dockerfile: ./Sample.Server/Dockerfile
     expose:
       - "5000"
+    restart: always
     depends_on:
       - database
     networks:
       - "simple-network"
-    restart: always
+    volumes:
+      - "./logs:/app/logs"
 
   database:
     image: postgres:latest
@@ -43,5 +45,6 @@ services:
       POSTGRES_PASSWORD: "postgres"
     ports:
       - "5432:5432"
+    restart: always
     volumes:
-      - "./simpledata:/var/lib/postgresql/data"
+      - "./postgresdata:/var/lib/postgresql/data"

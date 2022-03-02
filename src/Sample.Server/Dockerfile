@@ -16,3 +16,8 @@ COPY --from=build /app/out .
 # ENV ASPNETCORE_URLS=http://*:5000
 
 ENTRYPOINT ["dotnet", "Sample.Server.dll"]
+
+# No need to expose port 5000, because we do this in docker-compose.yml file. 
+# If you run 'docker build' with this file so you can uncomment line below or use -p flag instead. 
+
+# EXPOSE 5000

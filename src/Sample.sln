@@ -21,15 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DataTransfer.Http", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8117540-FD28-41A4-B9AC-2D75567CFDBC}"
 	ProjectSection(SolutionItems) = preProject
+		..\docker-compose.yml = ..\docker-compose.yml
+		..\down.sh = ..\down.sh
 		..\README.md = ..\README.md
+		..\up.sh = ..\up.sh
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proxy", "proxy", "{655F45E6-EE13-40E1-A0E4-E94A36682346}"
-	ProjectSection(SolutionItems) = preProject
-		..\docker-compose.yml = ..\docker-compose.yml
-		..\down.sh = ..\down.sh
-		..\up.sh = ..\up.sh
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user_conf.d", "user_conf.d", "{7E3C282B-22B3-44FB-9293-0484BA39808C}"
 	ProjectSection(SolutionItems) = preProject

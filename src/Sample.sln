@@ -25,18 +25,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proxy", "proxy", "{655F45E6-EE13-40E1-A0E4-E94A36682346}"
+	ProjectSection(SolutionItems) = preProject
+		..\docker-compose.yml = ..\docker-compose.yml
+		..\down.sh = ..\down.sh
+		..\up.sh = ..\up.sh
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user_conf.d", "user_conf.d", "{7E3C282B-22B3-44FB-9293-0484BA39808C}"
 	ProjectSection(SolutionItems) = preProject
 		..\proxy\user_conf.d\nginx.conf = ..\proxy\user_conf.d\nginx.conf
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{089E0516-A197-4BC4-A2DE-56C53D839FCD}"
-	ProjectSection(SolutionItems) = preProject
-		..\deploy\docker-compose.yml = ..\deploy\docker-compose.yml
-		..\deploy\down.sh = ..\deploy\down.sh
-		..\deploy\logs.sh = ..\deploy\logs.sh
-		..\deploy\up.sh = ..\deploy\up.sh
 	EndProjectSection
 EndProject
 Global
@@ -80,7 +77,6 @@ Global
 		{389A00B7-102F-4645-8F51-D0EF5D09B0F0} = {3FB4F75F-6E8B-470A-9B92-6BF802E633DC}
 		{655F45E6-EE13-40E1-A0E4-E94A36682346} = {B8117540-FD28-41A4-B9AC-2D75567CFDBC}
 		{7E3C282B-22B3-44FB-9293-0484BA39808C} = {655F45E6-EE13-40E1-A0E4-E94A36682346}
-		{089E0516-A197-4BC4-A2DE-56C53D839FCD} = {B8117540-FD28-41A4-B9AC-2D75567CFDBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5C4C090-F400-4E82-B8A4-2E45E8E29947}

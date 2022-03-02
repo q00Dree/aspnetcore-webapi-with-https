@@ -28,7 +28,7 @@ services:
       context: ./src
       dockerfile: ./Sample.Server/Dockerfile
     expose:
-      - "5000"
+      - "80"
     depends_on:
       - database
     networks:

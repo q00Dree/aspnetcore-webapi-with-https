@@ -21,15 +21,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DataTransfer.Http", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8117540-FD28-41A4-B9AC-2D75567CFDBC}"
 	ProjectSection(SolutionItems) = preProject
-		..\scripts\build_api.sh = ..\scripts\build_api.sh
-		..\docker-compose-long.yml = ..\docker-compose-long.yml
-		..\docker-compose-short.yml = ..\docker-compose-short.yml
-		..\proxy\user_conf.d\nginx.conf = ..\proxy\user_conf.d\nginx.conf
 		..\README.md = ..\README.md
-		..\start-long.sh = ..\start-long.sh
-		..\start-short.sh = ..\start-short.sh
-		..\stop-long.sh = ..\stop-long.sh
-		..\stop-short.sh = ..\stop-short.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proxy", "proxy", "{655F45E6-EE13-40E1-A0E4-E94A36682346}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user_conf.d", "user_conf.d", "{7E3C282B-22B3-44FB-9293-0484BA39808C}"
+	ProjectSection(SolutionItems) = preProject
+		..\proxy\user_conf.d\nginx.conf = ..\proxy\user_conf.d\nginx.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{089E0516-A197-4BC4-A2DE-56C53D839FCD}"
+	ProjectSection(SolutionItems) = preProject
+		..\deploy\docker-compose.yml = ..\deploy\docker-compose.yml
+		..\deploy\down.sh = ..\deploy\down.sh
+		..\deploy\logs.sh = ..\deploy\logs.sh
+		..\deploy\up.sh = ..\deploy\up.sh
 	EndProjectSection
 EndProject
 Global
@@ -71,6 +78,9 @@ Global
 		{030472C4-F93D-402B-BD1E-943F12AE5BE1} = {FCC4FC92-0874-426F-AF34-C22437D3ED01}
 		{EEA7ADA0-5E8E-4B0E-B201-43983C76F109} = {FCC4FC92-0874-426F-AF34-C22437D3ED01}
 		{389A00B7-102F-4645-8F51-D0EF5D09B0F0} = {3FB4F75F-6E8B-470A-9B92-6BF802E633DC}
+		{655F45E6-EE13-40E1-A0E4-E94A36682346} = {B8117540-FD28-41A4-B9AC-2D75567CFDBC}
+		{7E3C282B-22B3-44FB-9293-0484BA39808C} = {655F45E6-EE13-40E1-A0E4-E94A36682346}
+		{089E0516-A197-4BC4-A2DE-56C53D839FCD} = {B8117540-FD28-41A4-B9AC-2D75567CFDBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5C4C090-F400-4E82-B8A4-2E45E8E29947}

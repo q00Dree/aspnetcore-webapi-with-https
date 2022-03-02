@@ -13,8 +13,8 @@ services:
     environment:
       CERTBOT_EMAIL: "shard.f@mail.ru"
     ports:
-      - 80:80
-      - 443:443
+      - "80:80"
+      - "443:443"
     networks:
       - "simple-network"
     volumes:
@@ -26,7 +26,7 @@ services:
     container_name: api
     build:
       context: ./src
-      dockerfile: ./Sample.Server/Dockerfile.Short
+      dockerfile: ./Sample.Server/Dockerfile
     expose:
       - "5000"
     depends_on:

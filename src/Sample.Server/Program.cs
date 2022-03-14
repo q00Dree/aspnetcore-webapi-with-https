@@ -39,7 +39,7 @@ namespace Sample.Server
 
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
-            var config = new ConfigurationBuilder()
+            var configuration = new ConfigurationBuilder()
                 .SetBasePath(basePath: Directory.GetCurrentDirectory())
                 .AddJsonFile(path: _appsettingsFilename, optional: true, reloadOnChange: true)
                 .Build();
@@ -48,7 +48,10 @@ namespace Sample.Server
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls(urls: "http://0.0.0.0:5000");
+
+                    // webBuilder.UseUrls(urls: "http://0.0.0.0:5000");
+                    // Configure it in appsettings.json instead.
+                    // Don't forget to add ["externalUrlConfiguration": true] to Properties/launchSettings.json to explicitly override from appsettings.json and avoid warning.
                 })
                 .ConfigureLogging(logging =>
                 {
